@@ -106,41 +106,82 @@ export const shoppingViewHeaderMenuItems = [
     id: "home",
     label: "Home",
     path: "/shop/home",
+    icon: "🏠",
   },
   {
     id: "products",
     label: "Products",
     path: "/shop/listing",
+    icon: "📦",
   },
   {
     id: "men",
     label: "Men",
     path: "/shop/listing",
+    icon: "👔",
   },
   {
     id: "women",
     label: "Women",
     path: "/shop/listing",
+    icon: "👗",
   },
   {
     id: "kids",
     label: "Kids",
     path: "/shop/listing",
+    icon: "👶",
   },
   {
     id: "footwear",
     label: "Footwear",
     path: "/shop/listing",
+    icon: "👟",
   },
   {
     id: "accessories",
     label: "Accessories",
     path: "/shop/listing",
+    icon: "✨",
   },
   {
     id: "search",
     label: "Search",
     path: "/shop/search",
+    icon: "🔍",
+  },
+];
+
+export const brandMenuItems = [
+  {
+    id: "nike",
+    label: "Nike",
+    icon: "✓",
+  },
+  {
+    id: "adidas",
+    label: "Adidas",
+    icon: "◆",
+  },
+  {
+    id: "puma",
+    label: "Puma",
+    icon: "🐆",
+  },
+  {
+    id: "levi",
+    label: "Levi's",
+    icon: "🧵",
+  },
+  {
+    id: "zara",
+    label: "Zara",
+    icon: "⭐",
+  },
+  {
+    id: "h&m",
+    label: "H&M",
+    icon: "🛍️",
   },
 ];
 

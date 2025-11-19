@@ -110,15 +110,21 @@ function CommonForm({
 
   return (
     <form onSubmit={onSubmit}>
-      <div className="flex flex-col gap-3">
+      <div className="flex flex-col gap-4">
         {formControls.map((controlItem) => (
-          <div className="grid w-full gap-1.5" key={controlItem.name}>
-            <Label className="mb-1">{controlItem.label}</Label>
+          <div className="grid w-full gap-2" key={controlItem.name}>
+            <Label className="text-sm font-semibold text-foreground">
+              {controlItem.label}
+            </Label>
             {renderInputsByComponentType(controlItem)}
           </div>
         ))}
       </div>
-      <Button disabled={isBtnDisabled} type="submit" className="mt-2 w-full">
+      <Button 
+        disabled={isBtnDisabled} 
+        type="submit" 
+        className="mt-6 w-full bg-gradient-to-r from-purple-500 to-blue-500 hover:from-purple-600 hover:to-blue-600 text-white font-semibold h-10 rounded-lg shadow-md hover:shadow-lg transition-all duration-300 disabled:opacity-50 disabled:cursor-not-allowed"
+      >
         {buttonText || "Submit"}
       </Button>
     </form>
