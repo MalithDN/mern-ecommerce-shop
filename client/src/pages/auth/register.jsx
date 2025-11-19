@@ -35,31 +35,43 @@ function AuthRegister() {
     });
   }
 
-  console.log(formData);
-
   return (
-    <div className="mx-auto w-full max-w-md space-y-6">
-      <div className="text-center">
-        <h1 className="text-3xl font-bold tracking-tight text-foreground">
-          Create new account
-        </h1>
-        <p className="mt-2">
-          Already have an account
+    <div className="mx-auto w-full max-w-md fade-in">
+      <div className="space-y-2 mb-8">
+        <div className="text-center">
+          <div className="inline-block p-3 bg-gradient-to-br from-purple-500 to-blue-500 rounded-lg mb-4">
+            <span className="text-white text-2xl font-bold">✨</span>
+          </div>
+          <h1 className="text-4xl font-bold tracking-tight text-gray-900 mb-2">
+            Create Account
+          </h1>
+          <p className="text-gray-600">
+            Join us and start your shopping journey
+          </p>
+        </div>
+      </div>
+
+      <div className="bg-white rounded-2xl shadow-lg p-8 border border-gray-100 mb-6">
+        <CommonForm
+          formControls={registerFormControls}
+          buttonText={"Sign Up"}
+          formData={formData}
+          setFormData={setFormData}
+          onSubmit={onSubmit}
+        />
+      </div>
+
+      <div className="text-center text-sm">
+        <p className="text-gray-600">
+          Already have an account?{" "}
           <Link
-            className="font-medium ml-2 text-primary hover:underline"
+            className="font-semibold text-transparent bg-gradient-to-r from-purple-600 to-blue-600 bg-clip-text hover:opacity-80 transition-opacity"
             to="/auth/login"
           >
-            Login
+            Sign in
           </Link>
         </p>
       </div>
-      <CommonForm
-        formControls={registerFormControls}
-        buttonText={"Sign Up"}
-        formData={formData}
-        setFormData={setFormData}
-        onSubmit={onSubmit}
-      />
     </div>
   );
 }
