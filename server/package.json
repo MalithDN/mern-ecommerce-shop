@@ -5,8 +5,8 @@
   "main": "server.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "server.js",
-    "dev": "nodemon server.js"
+    "start": "node init && server.js",
+    "dev": "node init && nodemon server.js"
   },
   "author": "malith dilhara",
   "license": "ISC",
